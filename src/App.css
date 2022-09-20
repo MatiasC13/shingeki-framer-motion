@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+*{
+	margin: 0;
+	padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+height: 100vh;
+background-color: black;
+color: white;
+overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#colosalSvg{
+width: 800px;
+position: absolute;
+left: 0;
+right: 0;
+margin-left: auto;
+margin-right: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#colosalSvg > path{
+	stroke: white;
+	stroke-width: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+#logo{
+	width: 800px;
+	margin: 300px auto 0;
+	z-index: 2;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#logo > path{
+	stroke: white;
+	stroke-width: 2px;
+}
+
+.arrow-down{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin-bottom: 40px;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	z-index: 1;
+}
+
+.link{
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.about-container{
+	height: 100vh;
+	padding-top: 50px;
+}
+
+.about-container > h1{
+	text-align: center;
+	font-size: 50px;
+}
+
+.about-description{
+	width: 90%;
+	height: 75vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.about-description > p{
+	line-height: 1.5;
+	font-size: 20px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#titan{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#titan > path {
+stroke: white;
+stroke-width: 2px;
+}
+
+.news-container{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.news-container > h1{
+	margin-bottom: 30px;
+	font-size: 40px;
+}
+
+.news-button{
+	border: none;
+	color: black;
+	background-color: white;
+	display: block;
+	font-size: 20px;
+	width: 300px;
+	margin: 20px 0 20px 0;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.form{
+	background-color: white;
+	color: black;
+	padding: 30px;
+	position: absolute;
+	width: 50%;
+	z-index: 2;
+}
+
+label{
+	display: block;
+	padding-top: 15px;
+}
+
+input{
+	border: none;
+	padding-top: 5px;
+	margin-bottom: 5px;
+}
+
+textarea{
+	width: 90%;
+	display: block;
+	height: 200px;
+	margin: 10px auto 0;
+}
+
+.form-button{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	width: 30%;
+	display: block;
+	padding: 5px 10px 5px 10px;
+	font-size: 18px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 20px auto 20px;
 }
